@@ -34,7 +34,7 @@ const images = [
         }
     ]
 
-export function CarouselPlugin() {
+function CarouselAFC() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false })
   )
@@ -71,3 +71,4 @@ export function CarouselPlugin() {
     </Carousel>
   )
 }
+export default CarouselAFC;
