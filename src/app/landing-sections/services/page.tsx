@@ -32,13 +32,12 @@ const notifications = [
         }
     ]
 
-type CardProps = React.ComponentProps<typeof Card>
-function Services({ className, ...props }: CardProps) {
+function Services() {
   return (
-    <Card className={cn("w-[100%]", className)} {...props}>
+    <Card >
       <CardHeader>
         <CardTitle>Our Services</CardTitle>
-        <CardDescription>You have 3 unread messages.</CardDescription>
+        <CardDescription>You have 4 services.</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className='grid md:grid-cols-2'>
@@ -69,4 +68,3 @@ function Services({ className, ...props }: CardProps) {
   )
 }
 export default Services;
-
