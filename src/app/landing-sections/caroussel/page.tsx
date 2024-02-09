@@ -51,7 +51,7 @@ function CarouselAFC() {
         {images.map((pictures, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card className={'bg-[url(/images/carousel/finCrime1.png)]'}>
+              <Card>
                 <CardHeader>
                   <span className="text-4xl font-semibold text-center">{pictures.title}</span>
 
